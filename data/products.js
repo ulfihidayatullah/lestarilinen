@@ -320,31 +320,31 @@ window.PRODUCTS = [
   
   {
     id: 8,
-    slug: "baju-oK-kerah-overlapping",
+    slug: "baju-ok-kerah-overlapping",
     name: "Baju OK Kerah Overlapping",
     division: "medical",
     brand: "Comfort",
     category: "Jas Operasi",
-    image: "assets/images/products/comfort/baju-oK-kerah-overlapping-01.png",
+    image: "assets/images/products/comfort/baju-ok-kerah-overlapping-01.png",
 
     images: [
       {
-        src: "assets/images/products/comfort/baju-oK-kerah-overlapping-01.png",
+        src: "assets/images/products/comfort/baju-ok-kerah-overlapping-01.png",
         alt: "Foto utama produk",
       },
 
       {
-        src: "assets/images/products/comfort/baju-oK-kerah-overlapping-02.png",
+        src: "assets/images/products/comfort/baju-ok-kerah-overlapping-02.png",
         alt: "Detail material produk",
       },
 
       {
-        src: "assets/images/products/comfort/baju-oK-kerah-overlapping-03.png",
+        src: "assets/images/products/comfort/baju-ok-kerah-overlapping-03.png",
         alt: "Detail konstruksi produk",
       },
 
       {
-        src: "assets/images/products/comfort/baju-oK-kerah-overlapping-04.png",
+        src: "assets/images/products/comfort/baju-ok-kerah-overlapping-04.png",
         alt: "Contoh aplikasi produk",
       },
     ],
