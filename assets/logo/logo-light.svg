@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" role="img" aria-labelledby="title desc">
+  <title id="title">PT Lestari Dini Tunggul</title><desc id="desc">Logo placeholder versi terang.</desc>
+  <rect x="4" y="8" width="82" height="82" rx="24" fill="#24966b"/>
+  <path d="M28 28v37h25" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 30h15c9 0 15 6 15 17s-6 18-15 18H52" fill="none" stroke="#c9f0df" stroke-width="7" stroke-linecap="round"/>
+  <text x="104" y="43" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">LESTARI DINI</text>
+  <text x="104" y="68" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#9be0c3">TUNGGUL</text>
+  <text x="105" y="85" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2.1" fill="#b8ccc4">MEDICAL &amp; INDUSTRIAL TEXTILE</text>
+</svg>

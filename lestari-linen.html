@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lestari Linen | PT Lestari Dini Tunggul</title>
+    <meta
+      name="description"
+      content="Jelajahi katalog Lestari Linen untuk kebutuhan rumah sakit dan tenaga medis dengan pencarian serta filter kategori produk dan brand."
+    />
+    <meta property="og:title" content="Lestari Linen | PT Lestari Dini Tunggul" />
+    <meta
+      property="og:description"
+      content="Katalog Lestari Linen: hospital linen dan medical apparel dengan filter kategori produk, brand, dan pencarian."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0d3f2f" />
+    <link rel="icon" href="assets/logo/favicon.png" type="image/svg+xml" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap-fallback.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="products-linen" data-product-division="medical">
+    <div id="site-header"></div>
+    <main>
+      <section
+        class="page-hero"
+        style="
+          background-image: url(assets/images/products/hero-lestari.jpg);
+        "
+      >
+        <div class="container">
+          <div class="breadcrumb-lite">
+            <a href="index.html">Home</a><i data-lucide="chevron-right"></i
+            ><span>Lestari Linen</span>
+          </div>
+          <h1>Lestari Linen</h1>
+          <p>
+            Temukan koleksi linen rumah sakit dan medical apparel kami. Setiap produk dapat dikonsultasikan lebih lanjut untuk penyesuaian material, ukuran, warna, maupun identitas.
+        </div>
+      </section>
+      <div class="container">
+        <section class="filter-panel" aria-label="Filter produk">
+          <div class="filter-top catalog-filter-top">
+            <label class="search-box catalog-search-box">
+              <i data-lucide="search"></i>
+              <span class="visually-hidden">Cari produk</span>
+              <input
+                id="productSearch"
+                type="search"
+                placeholder="Cari produk..."
+                autocomplete="off"
+              />
+            </label>
+          </div>
+          <div class="product-filter-selects" aria-label="Filter produk">
+            <label class="filter-select">
+              <span class="filter-label">Kategori Produk</span>
+              <select id="categoryFilters" aria-label="Kategori Produk"></select>
+            </label>
+            <label class="filter-select">
+              <span class="filter-label">Kategori Brand</span>
+              <select id="brandFilters" aria-label="Kategori Brand"></select>
+            </label>
+          </div>
+        </section>
+      </div>
+      <section class="section-pad-sm" aria-labelledby="catalog-title">
+        <div class="container">
+          <div class="results-meta">
+            <div>
+              <span class="eyebrow mb-1">Katalog</span>
+              <h2 id="catalog-title" class="h4 mb-0">
+                Katalog Lestari Linen
+              </h2>
+            </div>
+            <span id="productCount">0 produk ditemukan</span>
+          </div>
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+          <nav
+            id="productPagination"
+            class="product-pagination"
+            aria-label="Paginasi produk"
+            hidden
+          ></nav>
+          <div id="productEmpty" class="empty-state" hidden>
+            <i data-lucide="package-search"></i>
+            <h2>Produk Belum Ditemukan</h2>
+            <p>
+              Gunakan kata kunci lain atau ubah kategori untuk menemukan pilihan
+              produk yang paling relevan.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <div id="floating-whatsapp"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/config.js" defer></script>
+    <script src="data/products.js" defer></script>
+    <script src="js/components.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/products.js" defer></script>
+  </body>
+</html>

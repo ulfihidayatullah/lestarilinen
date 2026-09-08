@@ -1,0 +1,119 @@
+@media (max-width: 1199.98px) {
+  :root { --container: 1040px; }
+  .why-grid { grid-template-columns:repeat(2,1fr); }
+  .client-grid { grid-template-columns:repeat(3,1fr); }
+}
+
+@media (max-width: 991.98px) {
+  .section-pad { padding: 86px 0; }
+  .site-header { padding:10px 0; }
+  .site-header::before { opacity:1; }
+  .navbar-collapse { margin-top:10px; padding:13px; border:1px solid var(--border); border-radius:16px; background:#fff; box-shadow:var(--shadow-sm); }
+  .navbar-nav { align-items:stretch !important; }
+  .navbar .nav-link { padding:11px 12px !important; }
+  .navbar .nav-link:not(.nav-contact)::after { display:none; }
+  .navbar .nav-contact { margin:4px 0 0; text-align:center; }
+  .nav-product-dropdown { width:100%; }
+  .nav-product-toggle { width:100%; justify-content:space-between; text-align:left; }
+  .nav-product-toggle svg { flex:0 0 auto; }
+  .product-dropdown-menu {
+    position:static;
+    min-width:0;
+    width:100%;
+    max-height:0;
+    margin:0;
+    padding:0 8px;
+    overflow:hidden;
+    border:0;
+    border-radius:12px;
+    background:#f6faf8;
+    box-shadow:none;
+    opacity:1;
+    visibility:visible;
+    pointer-events:none;
+    transform:none;
+    transition:max-height 220ms ease, margin 220ms ease, padding 220ms ease;
+  }
+  .nav-product-dropdown.is-open .product-dropdown-menu {
+    max-height:190px;
+    margin:3px 0 6px;
+    padding:6px 8px;
+    pointer-events:auto;
+  }
+  .nav-product-dropdown.is-open .nav-product-toggle svg { transform:rotate(180deg); }
+  .product-dropdown-link { padding:10px 11px; white-space:normal; }
+  .capability-strip { margin-top:-48px; }
+  .capability-shell { grid-template-columns:1fr; }
+  .capability-item + .capability-item::before { left:25px; right:25px; top:0; bottom:auto; width:auto; height:1px; }
+  .about-media { max-width:640px; margin-bottom:55px; }
+  .product-grid { grid-template-columns:repeat(2,1fr); }
+  .value-grid { grid-template-columns:repeat(2,1fr); }
+  .stat-grid { grid-template-columns:repeat(2,1fr); }
+  .filter-panel { top:72px; }
+  .footer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:42px 36px; }
+}
+
+@media (max-width: 767.98px) {
+  .section-pad { padding:72px 0; }
+  .section-pad-sm { padding:60px 0; }
+  .section-title { margin-bottom:34px; }
+  .section-title h2 { font-size:clamp(1.8rem,8vw,2.55rem); }
+  .navbar-brand img { width:174px; }
+  .capability-item { padding:21px; }
+  .about-list { grid-template-columns:1fr; }
+  .why-grid, .product-grid { grid-template-columns:1fr; }
+  .why-card { min-height:auto; }
+  .client-track { animation-duration:34s; }
+  .cta-panel { padding:36px 26px; border-radius:24px; }
+  .page-hero { padding:145px 0 72px; }
+  .filter-panel { position:relative; top:auto; margin-top:-23px; }
+  .filter-top { flex-direction:column; align-items:stretch; }
+  .division-segment { width:100%; }
+  .division-segment button { flex:1; }
+  .search-box { width:100%; margin-left:0; }
+  .related-grid { grid-template-columns:1fr; }
+  .value-grid, .stat-grid { grid-template-columns:1fr; }
+  .contact-card { padding:24px; }
+  .footer-grid { grid-template-columns:1fr; gap:36px; }
+  .footer-column-company { max-width:560px; }
+  .footer-bottom { flex-direction:column; }
+  .footer-note { text-align:left; }
+  .floating-wa { width:54px; height:54px; right:16px; bottom:16px; }
+  .wa-tooltip { display:none; }
+}
+
+@media (max-width: 479.98px) {
+  .results-meta { align-items:flex-start; gap:10px; flex-direction:column; }
+}
+
+@media (max-width: 1199.98px) {
+  .platform-logo-grid { grid-template-columns:repeat(3,1fr); }
+}
+
+@media (max-width: 767.98px) {
+  .platform-logo-grid { grid-template-columns:repeat(2,1fr); }
+  .platform-logo-card { min-height:132px; }
+  .platform-logo-card img { height:62px; }
+  .product-pagination { gap:7px; }
+  .pagination-pages { gap:6px; }
+  .pagination-btn { width:38px; height:38px; border-radius:10px; }
+  .contact-platform-grid { grid-template-columns:1fr; }
+  .platform-contact-card { padding:24px; }
+  .client-marquee-card { flex-basis:200px; height:104px; }
+}
+
+@media (max-width: 479.98px) {
+  .platform-logo-grid { gap:10px; }
+  .platform-logo-card { min-height:118px; padding:14px 9px; }
+  .platform-logo-card img { height:52px; }
+  .platform-logo-card span { font-size:.66rem; }
+  .pagination-pages { max-width:calc(100vw - 135px); overflow-x:auto; padding:4px 0; scrollbar-width:none; }
+  .pagination-pages::-webkit-scrollbar { display:none; }
+}
+
+@media (max-width: 575.98px) {
+  .footer-marketplace-card { min-height: 60px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .footer-marketplace-card { transition: none !important; }
+}

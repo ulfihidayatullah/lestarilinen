@@ -1,0 +1,825 @@
+.workshop-hero {
+  padding-bottom: 84px;
+}
+
+.workshop-hero h1 {
+  max-width: 760px;
+}
+
+.workshop-showcase {
+  padding-top: 70px;
+}
+
+.reference-masonry {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr .85fr;
+  grid-template-rows: 250px 250px;
+  gap: 15px;
+}
+
+.masonry-card {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 21px;
+  background: #eaf1ed;
+  padding: 0;
+  text-align: left;
+  box-shadow: 0 9px 28px rgba(9,55,40,.06);
+  cursor: zoom-in;
+}
+
+.masonry-card--hero {
+  grid-row: 1/span 2;
+}
+
+.masonry-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .55s cubic-bezier(.2,.7,.2,1),filter .35s ease;
+}
+
+.masonry-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,transparent 52%,rgba(4,33,25,.7) 100%);
+  pointer-events: none;
+}
+
+.masonry-card:hover img {
+  transform: scale(1.035);
+  filter: saturate(1.04);
+}
+
+.masonry-caption {
+  position: absolute;
+  left: 18px;
+  right: 54px;
+  bottom: 17px;
+  z-index: 2;
+  color: #fff;
+  font-size: .82rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.masonry-zoom {
+  position: absolute;
+  right: 14px;
+  bottom: 13px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(255,255,255,.14);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: var(--transition);
+}
+
+.masonry-zoom svg {
+  width: 16px;
+}
+
+.masonry-card:hover .masonry-zoom,.masonry-card:focus-visible .masonry-zoom {
+  opacity: 1;
+  transform: none;
+}
+
+.reference-heading {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 54px;
+}
+
+.reference-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  position: relative;
+}
+
+.reference-process-grid::before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 1px;
+  background: #c9ddd3;
+}
+
+.reference-process-item {
+  position: relative;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.reference-process-icon {
+  position: relative;
+  z-index: 2;
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  border: 1px solid #c9ddd3;
+  color: var(--primary-green);
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(13,63,47,.07);
+}
+
+.reference-process-icon svg {
+  width: 26px;
+}
+
+.reference-process-number {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #82a295;
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.reference-process-item h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.reference-process-item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .79rem;
+  line-height: 1.65;
+}
+
+.technology-layout {
+  display: grid;
+  grid-template-columns: minmax(0,1.08fr) minmax(0,.92fr);
+  gap: 66px;
+  align-items: center;
+}
+
+.technology-visual-heading {
+  max-width: 580px;
+  margin-bottom: 18px;
+}
+
+.technology-visual-heading .eyebrow {
+  margin-bottom: 0;
+}
+
+.rfid-showcase {
+  width: 100%;
+}
+
+/* --- CSS BARU UNTUK VIDEO YOUTUBE --- */
+.rfid-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Membuat rasio standar video YouTube otomatis */
+  border-radius: 24px;
+  overflow: hidden; /* Mencegah video keluar dari border melengkung */
+  box-shadow: 0 16px 42px rgba(9,55,40,.10);
+  background: #eaf1ed;
+}
+
+.rfid-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Jika Anda ingin membersihkan file CSS, Anda BISA MENGHAPUS 
+kelas-kelas di bawah ini dari file Anda karena sudah tidak dipakai:
+.rfid-showcase-media
+.rfid-showcase-media img
+.rfid-showcase-media::after
+.rfid-showcase-media:hover img
+.rfid-showcase-caption
+.rfid-showcase-caption small
+.rfid-showcase-media>svg
+*/
+
+/* .rfid-showcase-media {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 500px;
+  border: 0;
+  border-radius: 24px;
+  background: #eaf1ed;
+  padding: 0;
+  text-align: left;
+  cursor: zoom-in;
+  box-shadow: 0 16px 42px rgba(9,55,40,.10);
+}
+
+.rfid-showcase-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .55s cubic-bezier(.2,.7,.2,1);
+}
+
+.rfid-showcase-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,transparent 48%,rgba(5,39,29,.78) 100%);
+}
+
+.rfid-showcase-media:hover img {
+  transform: scale(1.03);
+}
+
+.rfid-showcase-caption {
+  position: absolute;
+  left: 24px;
+  right: 64px;
+  bottom: 22px;
+  z-index: 2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.rfid-showcase-caption small {
+  display: block;
+  margin-bottom: 5px;
+  color: #d1ecdf;
+  font-size: .64rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.rfid-showcase-media>svg {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  z-index: 2;
+  width: 18px;
+  color: #fff;
+} */
+
+.technology-copy h2 {
+  max-width: 560px;
+  margin: 8px 0 16px;
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  letter-spacing: -.045em;
+  line-height: 1.08;
+}
+
+.technology-copy>p {
+  max-width: 590px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .9rem;
+  line-height: 1.78;
+}
+
+.technology-list {
+  display: grid;
+  gap: 0;
+  padding: 0;
+  margin: 29px 0 0;
+  list-style: none;
+}
+
+.technology-list li {
+  display: flex;
+  gap: 15px;
+  padding: 17px 0;
+  border-top: 1px solid var(--border);
+}
+
+.technology-list li:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.technology-list-icon {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: var(--primary-green);
+  background: var(--light-green);
+}
+
+.technology-list-icon svg {
+  width: 20px;
+}
+
+.technology-list strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: .86rem;
+}
+
+.technology-list p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .76rem;
+  line-height: 1.58;
+}
+
+.quality-reference-layout {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.quality-reference-copy h2 {
+  margin: 8px 0 15px;
+  font-size: clamp(2rem,3.5vw,3rem);
+  letter-spacing: -.045em;
+  line-height: 1.08;
+}
+
+.quality-reference-copy>p {
+  max-width: 580px;
+  color: var(--text-muted);
+  font-size: .9rem;
+  line-height: 1.75;
+}
+
+.quality-reference-list {
+  margin-top: 25px;
+}
+
+.quality-reference-list article {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 13px;
+  padding: 17px 0;
+  border-top: 1px solid var(--border);
+}
+
+.quality-reference-list article:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.quality-reference-list article>span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--primary-green);
+  font-size: .68rem;
+  font-weight: 900;
+}
+
+.quality-reference-list h3 {
+  margin: 0 0 4px;
+  font-size: .9rem;
+}
+
+.quality-reference-list p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .76rem;
+  line-height: 1.58;
+}
+
+.quality-reference-visual {
+  position: relative;
+  min-width: 0;
+}
+
+.quality-reference-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 520px;
+  border: 0;
+  border-radius: 24px;
+  background: #e8f0ec;
+  padding: 0;
+  cursor: zoom-in;
+}
+
+.quality-reference-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  transition: transform .55s cubic-bezier(.2,.7,.2,1);
+}
+
+.quality-reference-image:hover img {
+  transform: scale(1.025);
+}
+
+.quality-reference-image>svg {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 18px;
+  color: #fff;
+  z-index: 2;
+}
+
+.quality-reference-stat {
+  position: absolute;
+  left: -28px;
+  bottom: 30px;
+  min-width: 180px;
+  padding: 23px 25px;
+  border-radius: 19px;
+  color: #fff;
+  background: var(--dark-green);
+  box-shadow: 0 16px 38px rgba(8,46,36,.18);
+}
+
+.quality-reference-stat strong {
+  display: block;
+  font-size: 2.55rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.quality-reference-stat span {
+  display: block;
+  margin-top: 5px;
+  color: #d8eee4;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.activity-carousel {
+  --activity-gap: 18px;
+  position: relative;
+}
+
+.activity-carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.activity-carousel-track {
+  display: flex;
+  gap: var(--activity-gap);
+  transform: translate3d(0,0,0);
+  transition: transform .72s cubic-bezier(.2,.72,.2,1);
+  will-change: transform;
+}
+
+.activity-carousel-slide {
+  flex: 0 0 calc((100% - var(--activity-gap)) / 2);
+  min-width: 0;
+}
+
+.activity-reference-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16/10;
+  border: 0;
+  border-radius: 21px;
+  background: #eaf1ed;
+  padding: 0;
+  text-align: left;
+  cursor: zoom-in;
+  box-shadow: 0 10px 30px rgba(9,55,40,.07);
+}
+
+.activity-reference-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .55s cubic-bezier(.2,.7,.2,1);
+}
+
+.activity-reference-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,transparent 55%,rgba(5,39,29,.72) 100%);
+}
+
+.activity-reference-card:hover img {
+  transform: scale(1.035);
+}
+
+.activity-reference-card span {
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+  z-index: 2;
+  color: #fff;
+  font-size: .82rem;
+  font-weight: 850;
+}
+
+.activity-reference-card>svg {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  width: 17px;
+  color: #fff;
+}
+
+.activity-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.activity-carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activity-carousel-dot {
+  width: 34px;
+  height: 12px;
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.activity-carousel-dot::before,
+.activity-carousel-dot::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+}
+
+.activity-carousel-dot::before {
+  background: #d5e3dc;
+}
+
+.activity-carousel-dot::after {
+  background: var(--primary-green);
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: left center;
+  transition: transform .28s ease;
+}
+
+.activity-carousel-dot.is-active::after {
+  transform: translateY(-50%) scaleX(1);
+}
+
+.activity-carousel-arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.activity-carousel-arrow {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #cbdcd4;
+  border-radius: 50%;
+  color: var(--dark-green);
+  background: #fff;
+  transition: var(--transition);
+}
+
+.activity-carousel-arrow:hover {
+  color: #fff;
+  border-color: var(--dark-green);
+  background: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+.activity-carousel-arrow svg {
+  width: 17px;
+}
+
+.workshop-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background: rgba(3,24,18,.86);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .22s ease,visibility .22s ease;
+}
+
+.workshop-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.workshop-lightbox-frame {
+  max-width: min(1100px,92vw);
+  max-height: 86vh;
+  text-align: center;
+}
+
+.workshop-lightbox-frame img {
+  display: block;
+  max-width: 100%;
+  max-height: 78vh;
+  margin: auto;
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0,0,0,.28);
+}
+
+.workshop-lightbox-frame p {
+  margin: 13px 0 0;
+  color: #e6f1ec;
+  font-size: .82rem;
+  font-weight: 750;
+}
+
+.workshop-lightbox-close {
+  position: fixed;
+  right: 24px;
+  top: 22px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(255,255,255,.08);
+}
+
+.workshop-lightbox-close svg {
+  width: 20px;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+@media (max-width:991.98px) {
+  .reference-masonry {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 360px 230px 230px;
+  }
+
+  .masonry-card--hero {
+    grid-column: 1/span 2;
+    grid-row: auto;
+  }
+
+  .reference-process-grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 34px 0;
+  }
+
+  .reference-process-grid::before {
+    display: none;
+  }
+
+  .technology-layout,.quality-reference-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .technology-copy {
+    order: -1;
+  }
+
+  .quality-reference-stat {
+    left: 20px;
+  }
+
+  .quality-reference-image {
+    min-height: 430px;
+  }
+
+}
+
+@media (max-width:575.98px) {
+  .workshop-hero {
+    padding-bottom: 65px;
+  }
+
+  .workshop-showcase {
+    padding-top: 50px;
+  }
+
+  .reference-masonry {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .masonry-card,.masonry-card--hero {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 235px;
+  }
+
+  .masonry-card--hero {
+    min-height: 330px;
+  }
+
+  .reference-heading {
+    margin-bottom: 38px;
+  }
+
+  .reference-process-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .reference-process-item {
+    padding: 0 12px;
+  }
+
+  .reference-process-icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .rfid-showcase-media {
+    min-height: 340px;
+    border-radius: 18px;
+  }
+
+  .rfid-showcase-caption {
+    left: 17px;
+    right: 50px;
+    bottom: 16px;
+    font-size: .9rem;
+  }
+
+  .rfid-showcase-media>svg {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .quality-reference-image {
+    min-height: 340px;
+  }
+
+  .quality-reference-stat {
+    left: 15px;
+    bottom: 15px;
+    min-width: 160px;
+    padding: 18px 20px;
+  }
+
+  .activity-carousel {
+    --activity-gap: 14px;
+  }
+
+  .activity-carousel-slide {
+    flex-basis: 100%;
+  }
+
+  .activity-reference-card {
+    aspect-ratio: 4/3;
+  }
+
+  .workshop-lightbox {
+    padding: 18px;
+  }
+
+  .workshop-lightbox-close {
+    right: 14px;
+    top: 14px;
+  }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .masonry-card img,.masonry-zoom,.rfid-showcase-media img,.quality-reference-image img,.activity-reference-card img,.activity-carousel-track,.activity-carousel-dot::after,.activity-carousel-arrow,.workshop-lightbox {
+    transition: none !important;
+  }
+
+}

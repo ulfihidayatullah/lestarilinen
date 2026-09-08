@@ -1,0 +1,237 @@
+/* =========================================
+   RFID Page Styles
+   ========================================= */
+
+.rfid-page-section { 
+    padding: 80px 0; 
+}
+
+.section-surface {
+    background-color: #f8f9fc; 
+}
+
+/* Judul Section Top (Centered) */
+.section-title-center {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+/* Judul Section Side (Left Aligned) */
+.section-title-side {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0d3f2f;
+    margin-bottom: 15px;
+    background: rgba(13, 63, 47, 0.1);
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+.section-title-center h2,
+.section-title-side h2 {
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #212529;
+    line-height: 1.3;
+}
+
+.section-title-center p,
+.section-title-side p {
+    color: #6c757d;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Video Card */
+.rfid-video-card { 
+    max-width: 980px; 
+    margin: 0 auto; 
+    border-radius: 24px; 
+    overflow: hidden; 
+    box-shadow: 0 20px 50px rgba(13,63,47,0.15); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.rfid-video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(13,63,47,0.2);
+}
+.rfid-video-card iframe { 
+    width: 100%; 
+    aspect-ratio: 16/9; 
+    display: block; 
+    border: none;
+}
+
+/* Layout Menyamping (Keunggulan) */
+.rfid-side-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .rfid-side-layout {
+        grid-template-columns: 1fr 1.5fr; 
+        gap: 60px;
+    }
+}
+
+/* Grid untuk Card Menyamping */
+.rfid-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+@media (min-width: 768px) {
+    .rfid-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .rfid-card-grid .rfid-card:nth-child(3) {
+        grid-column: span 2; 
+    }
+}
+
+/* Grid 3 Kolom Centered (Langkah-langkah) */
+.rfid-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+@media (min-width: 768px) {
+    .rfid-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desain Card Interaktif */
+.rfid-card { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    background: #ffffff; 
+    border-radius: 20px; 
+    padding: 30px 25px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+}
+.rfid-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(13,63,47,0.03) 0%, transparent 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.rfid-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(13,63,47,0.1);
+    border-color: rgba(13,63,47,0.15);
+}
+.rfid-card:hover::before {
+    opacity: 1;
+}
+
+/* Elemen Angka/Ikon dalam Card */
+.card-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: rgba(13, 63, 47, 0.08);
+    color: #0d3f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.rfid-card:hover .card-number {
+    background: #0d3f2f;
+    color: #ffffff;
+    transform: rotate(-10deg) scale(1.15);
+    box-shadow: 0 8px 20px rgba(13,63,47,0.25);
+}
+
+/* Teks dalam Card */
+.card-text {
+    text-align: left;
+}
+.card-text h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #212529;
+}
+.card-text p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* Slide Dokumentasi Custom (Dengan Keterangan Teks Bawah) */
+.rfid-carousel {
+    padding-bottom: 50px; /* Ruang untuk titik indikator */
+}
+.rfid-carousel .carousel-item-wrapper {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.rfid-carousel .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+}
+.carousel-caption-custom {
+    padding: 25px 20px;
+    text-align: center;
+}
+.carousel-caption-custom h5 {
+    color: #212529;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.carousel-caption-custom p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+.rfid-carousel .carousel-indicators {
+    bottom: 0;
+    margin-bottom: 0;
+}
+.rfid-carousel .carousel-indicators [data-bs-target] {
+    background-color: #0d3f2f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .rfid-page-section { padding: 60px 0; }
+    .rfid-card { flex-direction: column; text-align: center; align-items: center; }
+    .card-text { text-align: center; }
+    .rfid-card-grid .rfid-card:nth-child(3) { grid-column: span 1; }
+    .rfid-carousel .carousel-item img { height: 250px; }
+}
