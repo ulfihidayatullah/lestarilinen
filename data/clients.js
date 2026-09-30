@@ -37,62 +37,60 @@ window.CLIENTS = [
   { id: 36, name: 'RSUD Prof. DR. W. Z. Johannes Kupang' },
   { id: 37, name: 'RS Orthopedi Prof DR.R. Soeharso' },
   { id: 38, name: 'Politeknik Kesehatan Banjarmasin' },
-  
-  // Data baru tambahan dari file PDF (List Customer LDT 2021-2023)
-  { id: 39, name: 'RSUD Sekayu' }, //[cite: 1]
-  { id: 40, name: 'RS Muhammadiayah Palembang' }, //[cite: 1]
-  { id: 41, name: 'RSUD Wonogiri' }, //[cite: 1]
-  { id: 42, name: 'RSUD Drajat Prawiranegara' }, //[cite: 1]
-  { id: 43, name: 'RSUD Tarutung' }, //[cite: 1]
-  { id: 44, name: 'RSUP Persahabatan' }, //[cite: 1]
-  { id: 45, name: 'RS Wakatobi' }, //[cite: 1]
-  { id: 46, name: 'Dinkes Ngawi' }, //[cite: 1]
-  { id: 47, name: 'Dinkes Kotabaru' }, //[cite: 1]
-  { id: 48, name: 'Dinkes Puruk Cahu' }, //[cite: 1]
-  { id: 49, name: 'RSUD Manambai' }, //[cite: 1]
-  { id: 50, name: 'RSUD Kota Makassar' }, //[cite: 1]
-  { id: 51, name: 'RSUD Papua Barat' }, //[cite: 1]
-  { id: 52, name: 'RS Universitas Sumatera Utara' }, //[cite: 1]
-  { id: 53, name: 'Dinkes Tangsel' }, //[cite: 1]
-  { id: 54, name: 'Dinkes Kab. Sidoardjo' }, //[cite: 1]
-  { id: 55, name: 'RSUD Taman Husada Bontang' }, //[cite: 1]
-  { id: 56, name: 'RSUD Sukamara' }, //[cite: 1]
-  { id: 57, name: 'RSUD Medan Labuhan' }, //[cite: 1]
-  { id: 58, name: 'RS Kesdam' }, //[cite: 1]
-  { id: 59, name: 'RSUD Banten' }, //[cite: 1]
-  { id: 60, name: 'RSUD Kota Bandung' }, //[cite: 1]
-  { id: 61, name: 'RSUD Arifin Achmad' }, //[cite: 1]
-  { id: 62, name: 'RSUP Fatmawati' }, //[cite: 1]
-  { id: 63, name: 'RSUD Teluk Kuantan' }, //[cite: 1]
-  { id: 64, name: 'RSUD Bari' }, //[cite: 1]
-  { id: 65, name: 'RS Adam Malik' }, //[cite: 1]
-  { id: 66, name: 'RSUD Biak' }, //[cite: 1]
-  { id: 67, name: 'RSUD Waluyo Jati' }, //[cite: 1]
-  { id: 68, name: 'RSBP Batam' }, //[cite: 1]
-  { id: 69, name: 'RSUD Indramayu' }, //[cite: 1]
-  { id: 70, name: 'RSUD Kalideres' }, //[cite: 1]
-  { id: 71, name: 'RSUD Puri Husada' }, //[cite: 1]
-  { id: 72, name: 'RSUP Kandou Manado' }, //[cite: 1]
-  { id: 73, name: 'RSUD Sungai Dareh' }, //[cite: 1]
-  { id: 74, name: 'RSUD Provinsi NTB' }, //[cite: 1]
-  { id: 75, name: 'RSUD Karo' }, //[cite: 1]
-  { id: 76, name: 'RSUD Jayapura' }, //[cite: 1]
-  { id: 77, name: 'RSUD Yuliddin Away' }, //[cite: 1]
-  { id: 78, name: 'RSAD Marthen Indey' }, //[cite: 1]
-  { id: 79, name: 'RSUD Abdoerahem' }, //[cite: 1]
-  { id: 80, name: 'RSDC Wisma Atlet' }, //[cite: 1]
-  { id: 81, name: 'RSUD Nurdin Hamzah' }, //[cite: 1]
-  { id: 82, name: 'RSUD AM Parikesit' }, //[cite: 1]
-  { id: 83, name: 'RSUD Manokwari' }, //[cite: 1]
-  { id: 84, name: 'RSUD Kiwari' }, //[cite: 1]
-  { id: 85, name: 'RSUD ASA Depok' }, //[cite: 1]
-  { id: 86, name: 'RSUD Sidoarjo Barat' }, //[cite: 1]
-  { id: 87, name: 'RSUD Kudungga' }, //[cite: 1]
-  { id: 88, name: 'RSUD Pandega Pangandara' }, //[cite: 1]
-  { id: 89, name: 'RSUD Kepahiang' }, //[cite: 1]
-  { id: 90, name: 'RSUD Lombok Barat' }, //[cite: 1]
-  { id: 91, name: 'RSUD Dadi Tjokrodipo' }, //[cite: 1]
-  { id: 92, name: 'RSUD Karanganyar' }, //[cite: 1]
-  { id: 93, name: 'RSUD Anuntaloko Parigi' }, //[cite: 1]
-  { id: 94, name: 'RSUD Ciamis' } //[cite: 1]
+  { id: 39, name: 'RSUD Sekayu' },
+  { id: 40, name: 'RS Muhammadiayah Palembang' },
+  { id: 41, name: 'RSUD Wonogiri' },
+  { id: 42, name: 'RSUD Drajat Prawiranegara' },
+  { id: 43, name: 'RSUD Tarutung' },
+  { id: 44, name: 'RSUP Persahabatan' },
+  { id: 45, name: 'RS Wakatobi' },
+  { id: 46, name: 'Dinkes Ngawi' },
+  { id: 47, name: 'Dinkes Kotabaru' },
+  { id: 48, name: 'Dinkes Puruk Cahu' },
+  { id: 49, name: 'RSUD Manambai' },
+  { id: 50, name: 'RSUD Kota Makassar' },
+  { id: 51, name: 'RSUD Papua Barat' },
+  { id: 52, name: 'RS Universitas Sumatera Utara' },
+  { id: 53, name: 'Dinkes Tangsel' },
+  { id: 54, name: 'Dinkes Kab. Sidoardjo' },
+  { id: 55, name: 'RSUD Taman Husada Bontang' },
+  { id: 56, name: 'RSUD Sukamara' },
+  { id: 57, name: 'RSUD Medan Labuhan' },
+  { id: 58, name: 'RS Kesdam' },
+  { id: 59, name: 'RSUD Banten' },
+  { id: 60, name: 'RSUD Kota Bandung' },
+  { id: 61, name: 'RSUD Arifin Achmad' },
+  { id: 62, name: 'RSUP Fatmawati' },
+  { id: 63, name: 'RSUD Teluk Kuantan' },
+  { id: 64, name: 'RSUD Bari' },
+  { id: 65, name: 'RS Adam Malik' },
+  { id: 66, name: 'RSUD Biak' },
+  { id: 67, name: 'RSUD Waluyo Jati' },
+  { id: 68, name: 'RSBP Batam' },
+  { id: 69, name: 'RSUD Indramayu' },
+  { id: 70, name: 'RSUD Kalideres' },
+  { id: 71, name: 'RSUD Puri Husada' },
+  { id: 72, name: 'RSUP Kandou Manado' },
+  { id: 73, name: 'RSUD Sungai Dareh' },
+  { id: 74, name: 'RSUD Provinsi NTB' },
+  { id: 75, name: 'RSUD Karo' },
+  { id: 76, name: 'RSUD Jayapura' },
+  { id: 77, name: 'RSUD Yuliddin Away' },
+  { id: 78, name: 'RSAD Marthen Indey' },
+  { id: 79, name: 'RSUD Abdoerahem' },
+  { id: 80, name: 'RSDC Wisma Atlet' },
+  { id: 81, name: 'RSUD Nurdin Hamzah' },
+  { id: 82, name: 'RSUD AM Parikesit' },
+  { id: 83, name: 'RSUD Manokwari' },
+  { id: 84, name: 'RSUD Kiwari' },
+  { id: 85, name: 'RSUD ASA Depok' },
+  { id: 86, name: 'RSUD Sidoarjo Barat' },
+  { id: 87, name: 'RSUD Kudungga' },
+  { id: 88, name: 'RSUD Pandega Pangandara' },
+  { id: 89, name: 'RSUD Kepahiang' },
+  { id: 90, name: 'RSUD Lombok Barat' },
+  { id: 91, name: 'RSUD Dadi Tjokrodipo' },
+  { id: 92, name: 'RSUD Karanganyar' },
+  { id: 93, name: 'RSUD Anuntaloko Parigi' },
+  { id: 94, name: 'RSUD Ciamis' }
 ];
